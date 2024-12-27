@@ -1,0 +1,45 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GUI", "ProjetGroupe5\GUI.csproj", "{FDF0BAEA-3F93-40FD-B649-92838267E2E3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{FAC5B8D4-A783-4C21-B36F-608C86AC025F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLL", "BLL\BLL.csproj", "{FAE35A64-F18F-41A4-8AEE-726B1700CE22}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BL", "BL\BL.csproj", "{75E410CD-253F-4443-A175-139D62E301BB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{096F55FA-54D8-44B5-B795-E801D3F9F4B9}"
+	ProjectSection(SolutionItems) = preProject
+		ProjetGroupe5\bin\Debug\haarcascade_frontalface_default.xml = ProjetGroupe5\bin\Debug\haarcascade_frontalface_default.xml
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FDF0BAEA-3F93-40FD-B649-92838267E2E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDF0BAEA-3F93-40FD-B649-92838267E2E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDF0BAEA-3F93-40FD-B649-92838267E2E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDF0BAEA-3F93-40FD-B649-92838267E2E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FAC5B8D4-A783-4C21-B36F-608C86AC025F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FAC5B8D4-A783-4C21-B36F-608C86AC025F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FAC5B8D4-A783-4C21-B36F-608C86AC025F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FAC5B8D4-A783-4C21-B36F-608C86AC025F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FAE35A64-F18F-41A4-8AEE-726B1700CE22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FAE35A64-F18F-41A4-8AEE-726B1700CE22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FAE35A64-F18F-41A4-8AEE-726B1700CE22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FAE35A64-F18F-41A4-8AEE-726B1700CE22}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75E410CD-253F-4443-A175-139D62E301BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75E410CD-253F-4443-A175-139D62E301BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75E410CD-253F-4443-A175-139D62E301BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75E410CD-253F-4443-A175-139D62E301BB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

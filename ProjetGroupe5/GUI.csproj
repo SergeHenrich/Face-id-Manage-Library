@@ -1,0 +1,337 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FDF0BAEA-3F93-40FD-B649-92838267E2E3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ProjetGroupe5</RootNamespace>
+    <AssemblyName>ProjetGroupe5</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="Emgu.CV, Version=2.2.1.1150, Culture=neutral, PublicKeyToken=7281126722ab4438, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Emgu.CV.dll</HintPath>
+    </Reference>
+    <Reference Include="Emgu.CV.ML, Version=2.2.1.1150, Culture=neutral, PublicKeyToken=7281126722ab4438, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Emgu.CV.ML.dll</HintPath>
+    </Reference>
+    <Reference Include="Emgu.CV.UI, Version=2.2.1.1150, Culture=neutral, PublicKeyToken=7281126722ab4438, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Emgu.CV.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Emgu.Util, Version=2.2.1.1150, Culture=neutral, PublicKeyToken=7281126722ab4438, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Emgu.Util.dll</HintPath>
+    </Reference>
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="FoxLearn.License, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\FoxLearn.License.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2">
+      <HintPath>C:\Users\KAKABI CHRISTIAN\Desktop\Cour sur le multicouche\Guna.UI2.WinForms.2.0.4.6\lib\net45\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="SKGL, Version=2.0.4.1, Culture=neutral, PublicKeyToken=6506df92444891d9, processorArchitecture=MSIL">
+      <HintPath>..\packages\SoftwareProtector.1.0.5.1\lib\SKGL.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="clé de licence.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="clé de licence.Designer.cs">
+      <DependentUpon>clé de licence.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConnexionAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConnexionAdmin.Designer.cs">
+      <DependentUpon>ConnexionAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConnexionUtilisateur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConnexionUtilisateur.Designer.cs">
+      <DependentUpon>ConnexionUtilisateur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Datas\DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Démarrage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Démarrage.Designer.cs">
+      <DependentUpon>Démarrage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Emprunt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Emprunt.Designer.cs">
+      <DependentUpon>Emprunt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EquipeDeveloppeur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EquipeDeveloppeur.Designer.cs">
+      <DependentUpon>EquipeDeveloppeur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gestionnaires.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gestionnaires.Designer.cs">
+      <DependentUpon>Gestionnaires.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InscriptionAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InscriptionAdmin.Designer.cs">
+      <DependentUpon>InscriptionAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InscriptionUtilisateur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InscriptionUtilisateur.Designer.cs">
+      <DependentUpon>InscriptionUtilisateur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OptionDémarrage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OptionDémarrage.Designer.cs">
+      <DependentUpon>OptionDémarrage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RepportForm\Rapport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RepportForm\Rapport.Designer.cs">
+      <DependentUpon>Rapport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RepportForm\Users rapport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RepportForm\Users rapport.Designer.cs">
+      <DependentUpon>Users rapport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="repport\CrystalReport1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="repport\CrystalReportuser.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReportuser.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="StockLivres.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StockLivres.Designer.cs">
+      <DependentUpon>StockLivres.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="clé de licence.resx">
+      <DependentUpon>clé de licence.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConnexionAdmin.resx">
+      <DependentUpon>ConnexionAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConnexionUtilisateur.resx">
+      <DependentUpon>ConnexionUtilisateur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Démarrage.resx">
+      <DependentUpon>Démarrage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Emprunt.resx">
+      <DependentUpon>Emprunt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EquipeDeveloppeur.resx">
+      <DependentUpon>EquipeDeveloppeur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gestionnaires.resx">
+      <DependentUpon>Gestionnaires.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InscriptionAdmin.resx">
+      <DependentUpon>InscriptionAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InscriptionUtilisateur.resx">
+      <DependentUpon>InscriptionUtilisateur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OptionDémarrage.resx">
+      <DependentUpon>OptionDémarrage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="RepportForm\Rapport.resx">
+      <DependentUpon>Rapport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RepportForm\Users rapport.resx">
+      <DependentUpon>Users rapport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="repport\CrystalReport1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="repport\CrystalReportuser.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReportuser.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockLivres.resx">
+      <DependentUpon>StockLivres.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Datas\DataSet.xsc">
+      <DependentUpon>DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Datas\DataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Datas\DataSet.xss">
+      <DependentUpon>DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="LINCENSE.txt" />
+    <Content Include="Outils\%40facial-recognition-windows-hello-rejuv.gif" />
+    <Content Include="Outils\%40facial-recognition-windows-hello.gif" />
+    <Content Include="Outils\Login.ico" />
+    <Content Include="Outils\Login.png" />
+    <Content Include="Outils\Login1.ico" />
+    <Content Include="Resources\son.wav" />
+    <Content Include="Resources\son2.wav" />
+    <Content Include="Resources\son3.wav" />
+    <Content Include="Resources\son4.wav" />
+    <Content Include="Software Protector.exe" />
+    <None Include="Resources\edit.jpeg" />
+    <None Include="Resources\add.jpeg" />
+    <None Include="Resources\add1.png" />
+    <None Include="Resources\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{fae35a64-f18f-41a4-8aee-726b1700ce22}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BL\BL.csproj">
+      <Project>{75e410cd-253f-4443-a175-139d62e301bb}</Project>
+      <Name>BL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{fac5b8d4-a783-4c21-b36f-608c86ac025f}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
