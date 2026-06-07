@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Configuration;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -14,7 +15,7 @@ namespace DAL
         public static string Encrypter(string textedeCryptage)
         {
             // Clé de chiffrement (à ne pas stocker en clair dans le code)
-            string EncryptionKey = "tipam2@2023xxxxxxxxxx237doualalogbessouiuc"; // Nous pouvons changer la clé de chiffrement selon nos besoins
+            string EncryptionKey = ConfigurationManager.AppSettings["EncryptionKey"];
             // Convertit la chaîne de texte en tableau d'octets en utilisant l'encodage Unicode
             byte[] clearBytes = Encoding.Unicode.GetBytes(textedeCryptage);
             // Crée un nouvel objet AES (Advanced Encryption Standard) pour le chiffrement
@@ -44,7 +45,7 @@ namespace DAL
         public static string Decrypter(string texteCrypte)
         {
             // Clé de chiffrement (devrait être identique à celle utilisée pour le chiffrement)
-            string EncryptionKey = "tipam2@2023xxxxxxxxxx237doualalogbessouiuc"; // Nous pouvons changer la clé de chiffrement selon nos besoins, mais la clé de déchiffrement doit être identique à la clé de chiffrement
+            string EncryptionKey = ConfigurationManager.AppSettings["EncryptionKey"];
             // Remplace les espaces dans la chaîne chiffrée par le caractère '+' (pour décodage Base64)
             texteCrypte = texteCrypte.Replace(" ", "+");
             // Convertit la chaîne chiffrée en tableau d'octets en utilisant Base64
