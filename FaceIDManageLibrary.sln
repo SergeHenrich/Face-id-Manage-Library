@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GUI", "ProjetGroupe5\GUI.csproj", "{FDF0BAEA-3F93-40FD-B649-92838267E2E3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GUI", "projet\GUI.csproj", "{FDF0BAEA-3F93-40FD-B649-92838267E2E3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{FAC5B8D4-A783-4C21-B36F-608C86AC025F}"
 EndProject
@@ -13,7 +13,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BL", "BL\BL.csproj", "{75E4
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{096F55FA-54D8-44B5-B795-E801D3F9F4B9}"
 	ProjectSection(SolutionItems) = preProject
-		ProjetGroupe5\bin\Debug\haarcascade_frontalface_default.xml = ProjetGroupe5\bin\Debug\haarcascade_frontalface_default.xml
+		projet\bin\Debug\haarcascade_frontalface_default.xml = projet\bin\Debug\haarcascade_frontalface_default.xml
 	EndProjectSection
 EndProject
 Global
